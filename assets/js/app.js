@@ -1,5 +1,5 @@
 import { ScorekeeperApp } from './modules/scorekeeper-app.js';
-import { Utils } from './modules/utils.js';
+import { Utils } from './utils.js';
 
 // =====================================================
 // APPLICATION INITIALIZATION
