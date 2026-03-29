@@ -1,6 +1,6 @@
 # Ultimate Field-Side Score Sheet
 
-A touch-first Ultimate scorekeeping console that runs 100 % in the browser. The static bundle (`index.html`, `styles.css`, `scripts.js`) drives all match controls locally—dual timers, roster sync, score/event logging, timeout management, ABBA tracking, and CSV export—while the optional Google Apps Script backend (`function doPost.ts`) streams those events into Google Sheets. State is auto-saved in `localStorage`, so reloading the tab or swapping devices can restore the match in seconds.
+A touch-first Ultimate scorekeeping console that runs 100 % in the browser. The static bundle (`index.html`, `styles.css`, `app.js`) drives all match controls locally—dual timers, roster sync, score/event logging, timeout management, ABBA tracking, and CSV export—while the optional Google Apps Script backend (`function doPost.ts`) streams those events into Google Sheets. State is auto-saved in `localStorage`, so reloading the tab or swapping devices can restore the match in seconds.
 
 ---
 
@@ -34,12 +34,12 @@ The handler automatically:
 
 ### 2. Frontend
 
-1. Open `scripts.js` and update the `CONFIG` object:
+1. Open [config.js](assets/js/config.js) and update the `CONFIG` object:
    - `API_URL` – optional remote roster source (CSV columns = team names, JSON shape `{ "Team": ["Player", ...] }`). Leave blank to skip fetching.
    - `SUBMIT_URL` – Apps Script web app URL. When empty the UI still creates CSV downloads but skips the HTTP POST.
    - Adjust other defaults (match duration, halftime trigger score, timeout counts, auto-save interval) as needed.
-2. Host `index.html`, `styles.css`, `scripts.js`, `logo.png`, and `page_icon.png` on any static host (GitHub Pages, Netlify, S3, local `python -m http.server`, etc.).
-3. Swap logos/colors by editing the assets and CSS variables in `styles.css`.
+2. Host `index.html`, `styles.css`, `*.js`, `logo.png`, and `page_icon.png` on any static host (GitHub Pages, Netlify, S3, local `python -m http.server`, etc.).
+3. Swap logos/colors by editing the assets and CSS variables in [styles.css](assets/css/styles.css).
 
 ---
 

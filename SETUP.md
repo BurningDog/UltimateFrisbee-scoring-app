@@ -62,11 +62,11 @@ This script receives match data from the app and writes it to the Google Sheet.
 ## Step 5 — Configure and deploy the app
 
 1. Fork/clone this repository to your own GitHub account
-2. In `scripts.js`, update the two URLs at the top (`CONFIG` object):
+2. In [config.js](assets/js/config.js), update the two URLs at the top (`CONFIG` object):
    - `API_URL` → your CSV publish URL from Step 3
    - `SUBMIT_URL` → your Apps Script URL from Step 4
 3. Replace `logo.png` and `page_icon.png` with your own images (optional)
-4. Edit `styles.css` to match your branding (optional)
+4. Edit [styles.css](assets/css/styles.css) to match your branding (optional)
 5. In your GitHub repo: **Settings → Pages → Build and deployment → Deploy from a branch → main → Save**
 6. Your app URL will appear at the top of the Pages settings: `https://your_account.github.io/repository_name/`
 

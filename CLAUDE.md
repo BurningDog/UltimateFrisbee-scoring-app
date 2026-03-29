@@ -19,11 +19,12 @@ Then open `http://localhost:8000`.
 ## Architecture
 
 The entire app lives in three files:
+
 - `index.html` — UI shell (modals, score panels, timer displays, event log)
-- `scripts.js` — All logic (~3,500 lines, 7 classes + utils)
+- `app.js` — All logic (~3,500 lines, 7 classes + utils)
 - `styles.css` — Styling with CSS custom properties for theming
 
-### Class Structure in `scripts.js`
+### Class Structure in `app.js`
 
 | Class | Role |
 |---|---|
