@@ -14,6 +14,8 @@ npx http-server
 
 Then open `http://localhost:8000`.
 
+> ES modules require HTTP(S) — opening `index.html` directly as a `file://` URL will not work.
+
 ## Architecture
 
 The entire app lives in three files:
