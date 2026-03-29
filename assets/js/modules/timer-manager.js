@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js';
+import { CONFIG } from '../config.js';
 
 // =====================================================
 // REVAMPED TIMER MANAGER - Simple countdown from future date

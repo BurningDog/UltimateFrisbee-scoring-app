@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js';
+import { CONFIG } from '../config.js';
 
 // =====================================================
 // LOADING MANAGER - Same as before

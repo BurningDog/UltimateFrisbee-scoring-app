@@ -1,5 +1,5 @@
-import { CONFIG, SPECIAL_OPTIONS } from './config.js';
-import { Utils } from './utils.js';
+import { CONFIG, SPECIAL_OPTIONS } from '../config.js';
+import { Utils } from '../utils.js';
 import { PersistenceManager } from './persistence-manager.js';
 import { DataManager } from './data-manager.js';
 import { ApiManager } from './api-manager.js';
